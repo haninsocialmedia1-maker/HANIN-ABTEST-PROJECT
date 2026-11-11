@@ -1,3 +1,4 @@
+```python
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -94,4 +95,4 @@ say(f"👥 إجمالي المستخدمات المتوقعات خلال فتر�
 # تقييم MDE بناءً على الفترات الزمنية
 for label, n_g in [("خلال المدة المخططة (7 أيام)", n_planned), ("لو اكتفينا بأسبوع تجريبي أول", 7 * c["daily_new_users"] // 2)]:
     m = mde_proportions(c["baseline_conversion"], n_g, c["alpha"], c["power"])
-    say(f"🔍 {label}: أص
+    say(f"🔍 {label}: أصغر أثر قابل للاكتشاف (MDE) هو تقريباً {m * 100:.2f} نقطة.")
